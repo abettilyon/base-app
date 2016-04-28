@@ -1,4 +1,4 @@
-export default App;
+
 
 import React from 'react';
 import Router from 'react-router';
@@ -26,6 +26,13 @@ let routes = (
   </Route>
 );
 
-Router.run(routes, function (Handler) {
-  React.render(<Handler/>, document.body);
-});
+ReactDOM.render((
+  <Router>
+    <Route path="/" component={Hello} />
+  </Router>
+
+), document.getElementById('root'));
+
+// Router.run(routes, function (Handler) {
+//   React.render(<Handler/>, document.body);
+// });

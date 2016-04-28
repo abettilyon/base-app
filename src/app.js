@@ -15,7 +15,7 @@ app.set('views', './src/views');
 
 
 // Compiled Components
-app.use('/c', express.static('./lib/componants'));
+app.use('/c', express.static('./compiled_assets'));
 
 
 // app.route("/")
@@ -24,7 +24,7 @@ app.use('/c', express.static('./lib/componants'));
 //   });
 
 app.get("/", function(req, res) {
-  res.render('index', { title: 'Hello'} )
+  res.render('index', { title: 'Home Page'} )
 })
 
 

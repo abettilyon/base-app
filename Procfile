@@ -1,2 +1,2 @@
-babel: npm run babel-server
-web: npm run server
+webpack: npm run webpack-server
+web: npm start
