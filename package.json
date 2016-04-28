@@ -4,9 +4,8 @@
   "description": "Basic framework fro building a React, es2015, webapp",
   "main": "src/app.js",
   "scripts": {
-    "webpack-server": "./node_modules/.bin/webpack --progress --colors --watch",
-    "babel-server": "./node_modules/.bin/babel src/componants -d lib/componants -w",
-    "start": "nodemon src/app",
+    "webpack": "nodemon src/server/webpack-dev-server",
+    "start": "node src/server/app",
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf compiled_assets"
   },
@@ -31,6 +30,7 @@
     "babel-preset-react": "^6.5.0",
     "css-loader": "^0.23.1",
     "nodemon": "^1.9.1",
+    "react-hot-loader": "^1.3.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.14.1"
